@@ -1,0 +1,202 @@
+body,
+html {
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media only screen and (min-width : 320px) {
+
+    /*------MAIN PAGE------*/
+
+    .top_banner {
+        height: 50px;
+    }
+
+    .wave {
+        height: 100%;
+    }
+
+    .center_contents {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        width: 90%;
+        margin: 85px auto;
+
+
+    }
+
+    .center_logo {
+        max-height: 150px;
+    }
+
+    .center_blurb {
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .sub_blurb {
+        text-align: center;
+    }
+
+    .btn_wrap {
+        width: 80%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .center_btns {
+        height: 40px;
+        width: 110px;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 5px;
+        box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+            0 12.5px 10px rgba(0, 0, 0, 0.042),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+            0 100px 80px rgba(0, 0, 0, 0.02);
+
+    }
+
+    .shop_btn {
+        background-color: #59cf94;
+        color: #fff;
+    }
+
+    .signup_btn {
+        background-color: #f9f871;
+        color: #59cf94;
+    }
+
+    /*-----FOOTER CONTENTS-----*/
+
+    .footer_contents {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        bottom: 0;
+        height: 50px;
+        background-color: #B2F093;
+
+    }
+
+    .socials_wrap {
+        width: 50%;
+        height: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #f9f871;
+
+    }
+
+    .social_icons {
+        font-size: 20px;
+        color: #59cf94;
+    }
+
+}
+
+/*--iPad screens--*/
+@media only screen and (min-width : 768px) {
+
+    /*------MAIN PAGE------*/
+
+    .center_contents {
+        height: 500px;
+    }
+
+    .center_logo {
+        max-height: 300px;
+    }
+
+    .center_blurb {
+        font-size: 27px;
+    }
+
+    .sub_blurb {
+        width: 75%;
+        font-size: 20px;
+    }
+
+    .center_btns {
+        height: 55px;
+        width: 150px;
+        font-size: 21px;
+    }
+
+    .footer_contents {
+        height: 88px;
+    }
+
+    .socials_wrap {
+        width: 75%;
+    }
+
+    .social_icons {
+        font-size: 40px;
+    }
+}
+
+/*--Desktop view--*/
+@media only screen and (min-width : 1920px) {
+
+    /*------MAIN PAGE------*/
+
+    .center_logo {
+        max-height: 220px;
+    }
+
+    .btn_wrap {
+        width: 25%;
+    }
+
+    .center_btns {
+        height: 49px;
+        width: 130px;
+        font-size: 18px;
+        cursor: pointer;
+
+    }
+
+    .sub_blurb {
+        font-size: 25px;
+        width: 37%;
+    }
+
+    .footer_contents {
+        height: 50px;
+    }
+
+    .socials_wrap {
+        justify-content: space-between;
+        margin-left: 20px;
+        border-radius: 5px;
+        width: 8%;
+        padding: 0px 10px;
+    }
+
+    .social_icons {
+        font-size: 23px;
+    }
+}
+
+
+.center_btns:active {
+    box-shadow: none;
+}
