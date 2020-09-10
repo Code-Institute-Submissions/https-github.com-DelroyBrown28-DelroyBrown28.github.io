@@ -193,6 +193,8 @@ html {
 
     .social_icons {
         font-size: 23px;
+        cursor: pointer;
+        transition: 0.3s;
     }
 }
 
@@ -200,3 +202,19 @@ html {
 .center_btns:active {
     box-shadow: none;
 }
+
+.fa-facebook-square:hover {
+    color: #3b5998
+}
+
+.fa-instagram:hover {
+    display: block;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.fa-twitter-square:hover {
+    color: #1da1f2
+  }
