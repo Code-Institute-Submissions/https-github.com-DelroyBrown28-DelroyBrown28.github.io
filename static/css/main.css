@@ -24,7 +24,7 @@ html {
         align-items: center;
         justify-content: center;
         flex-flow: column;
-        width: 90%;
+        max-width: 90%;
         margin: 85px auto;
 
 
@@ -37,12 +37,16 @@ html {
     .center_blurb {
         font-weight: 700;
         margin: 0;
+        max-width: 324px;
         text-align: center;
         font-size: 20px;
+
+
     }
 
     .sub_blurb {
         text-align: center;
+        max-width: 324px;
     }
 
     .btn_wrap {
@@ -54,8 +58,8 @@ html {
     }
 
     .center_btns {
-        height: 40px;
-        width: 110px;
+        min-height: 40px;
+        min-width: 110px;
         border: none;
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
@@ -86,16 +90,16 @@ html {
         position: absolute;
         display: flex;
         align-items: center;
-        width: 100%;
+        min-width: 100%;
         bottom: 0;
-        height: 50px;
+        min-height: 50px;
         background-color: #B2F093;
 
     }
 
     .socials_wrap {
-        width: 90%;
-        height: 70%;
+        min-width: 90%;
+        min-height: 35px;
         margin: auto;
         display: flex;
         align-items: center;
@@ -125,46 +129,6 @@ html {
 
 }
 
-/*--iPad screens--*/
-@media only screen and (min-width : 768px) {
-
-    /*------MAIN PAGE------*/
-
-    .center_contents {
-        height: 500px;
-    }
-
-    .center_logo {
-        max-height: 300px;
-    }
-
-    .center_blurb {
-        font-size: 27px;
-    }
-
-    .sub_blurb {
-        width: 75%;
-        font-size: 20px;
-    }
-
-    .center_btns {
-        height: 55px;
-        width: 150px;
-        font-size: 21px;
-    }
-
-    .footer_contents {
-        height: 88px;
-    }
-
-    .socials_wrap {
-        width: 75%;
-    }
-
-    .social_icons {
-        font-size: 40px;
-    }
-}
 
 /*--Desktop view--*/
 @media only screen and (min-width : 1920px) {
@@ -189,7 +153,12 @@ html {
 
     .sub_blurb {
         font-size: 25px;
-        width: 37%;
+        max-width: 36%;
+    }
+
+    .center_blurb {
+        font-size: 30px;
+        max-width: 36%;
     }
 
     .footer_contents {
@@ -197,16 +166,26 @@ html {
     }
 
     .socials_wrap {
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-left: 20px;
-        width: 8%;
+        min-width: 25%;
         padding: 0px 10px;
+
     }
 
     .social_icons {
         font-size: 23px;
         cursor: pointer;
         transition: 0.3s;
+    }
+
+    .plant_care_btn {
+        width: 110px;
+        height: 30px;
+        font-size: 13.35px;
+        border-radius: 100px;
+        border: 2px solid #f9f871;
+        cursor: pointer;
     }
 }
 
@@ -229,4 +208,4 @@ html {
 
 .fa-twitter-square:hover {
     color: #1da1f2
-  }
+}
