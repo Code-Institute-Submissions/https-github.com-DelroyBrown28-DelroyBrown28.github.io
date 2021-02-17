@@ -176,7 +176,10 @@ SIGN UP/CONTACT PAGE
 .top-contents-wrap,
 .bottom-contents-wrap {
     flex-flow: row;
+
 }
+
+
 
 .top-left-contents,
 .top-right-contents,
@@ -198,6 +201,10 @@ SIGN UP/CONTACT PAGE
 .back-btn {
     position: absolute;
     top: 0;
+}
+
+.back-btn-2 {
+    display: none;
 }
 
 .say-hi-text {
@@ -228,7 +235,8 @@ SIGN UP/CONTACT PAGE
 }
 
 
-.down-arrow-link:hover {
+.down-arrow-link:hover,
+.up-arrow-link:hover {
     animation-name: bounce;
 }
 
@@ -395,6 +403,122 @@ SIGN UP/CONTACT PAGE
         0 41.8px 33.4px rgba(0, 0, 0, 0.028),
         0 100px 80px rgba(0, 0, 0, 0.02);
 }
+
+
+/* BOTTOM LEFT CONTENTS */
+
+
+.bottom-left-text {
+    flex-flow: column;
+}
+
+.signup-blurb {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.signup-form {
+    position: relative;
+    flex-flow: column;
+    height: 60vh;
+    width: 55%;
+    justify-content: space-evenly;
+}
+
+.signup-form input {
+
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 2px solid #333;
+
+}
+
+.top-form-inputs {
+    width: 49%;
+}
+
+.top-form-inputs-wrap {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.email-address-btmleft,
+.password,
+.re-type-password {
+    width: 100%;
+}
+
+.terms-box {
+    width: 100%;
+}
+
+#radio-btn {
+    width: 15px;
+    margin-right: 10px;
+}
+
+#signup-form-btn-btmleft {
+    width: 100%;
+    height: 45px;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    background-color: #f9f871;
+    color: #59cf94;
+    transition: 0.3s;
+}
+
+#signup-form-btn-btmleft:hover {
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+        0 12.5px 10px rgba(0, 0, 0, 0.042),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+        0 100px 80px rgba(0, 0, 0, 0.02);
+}
+
+/* BOTTOM RIGHT CONTENTS */
+
+.bottom-right-contents {
+    position: relative;
+    background-image: url(/static/images/green-backing.png);
+
+}
+
+.text-wrap-2 {
+    position: relative;
+    flex-flow: column;
+}
+
+.home-btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.save-15-text {
+    font-weight: 300;
+}
+
+.up-arrow-link {
+
+    transform: rotate(180deg);
+}
+
+.up-arrow-link:hover {
+    animation-name: bounce-2-reverse;
+
+}
+
+
+
 
 @media only screen and (min-width : 320px) {
 
@@ -840,8 +964,54 @@ SIGN UP/CONTACT PAGE
     color: #1da1f2
 }
 
+@media(max-width: 1311px) {
+    .top-left-contents {
+        display: none;
+    }
 
-@media(max-width: 377px) {
+    .bottom-right-contents {
+        display: none;
+    }
+
+    .rightside-text-wrap {
+        width: 100%;
+    }
+
+    .message-form,
+    .signup-form {
+        width: 90vw !important;
+    }
+
+    .line-break {
+        display: none;
+    }
+
+    .contact-blurb,
+    .signup-blurb {
+        width: 300px;
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .form-fields {
+        margin-bottom: 15px;
+    }
+
+    #submit-form-btn {
+        margin-top: 15px;
+    }
+
+    .back-btn-2 {
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+
+    /* HOME PAGE */
+
     .subheading {
         text-align: center;
     }
@@ -854,4 +1024,25 @@ SIGN UP/CONTACT PAGE
         width: 100%;
 
     }
+
+    .navbar-collapse {
+        background-color: #59cf94;
+        z-index: 200;
+    }
+
+    .nav-link {
+        color: #fff !important;
+        font-size: 2rem;
+    }
+
+    .navbar-collapse ul li {
+        color: #f7f7f7;
+        text-align: center;
+        color: #fff;
+        font-weight: 600;
+
+    }
 }
+
+
+@media(max-width: 377px) {}
