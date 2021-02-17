@@ -8,6 +8,10 @@ MY LITTLE HELPERS
     justify-content: center;
 }
 
+.redborder {
+    border: 1px solid red;
+}
+
 body,
 html {
     display: flex;
@@ -155,6 +159,242 @@ HOME PAGE
     cursor: pointer;
 }
 
+/* 
+====================
+SIGN UP/CONTACT PAGE
+====================
+*/
+
+.contact-signup-body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    /* height: fit-content; */
+}
+
+.top-contents-wrap,
+.bottom-contents-wrap {
+    flex-flow: row;
+}
+
+.top-left-contents,
+.top-right-contents,
+.bottom-left-contents,
+.bottom-right-contents {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+/* TOP LEFT CONTENTS */
+
+.top-left-contents {
+    position: relative;
+    background-image: url(/static/images/green-backing.png);
+
+}
+
+.back-btn {
+    position: absolute;
+    top: 0;
+}
+
+.say-hi-text {
+    color: #f7f7f7;
+    text-align: center;
+    font-size: 6.2rem;
+    font-family: "Bree Serif", serif;
+    margin: 0;
+    color: #fff;
+
+}
+
+.signup-below-text {
+    color: #f7f7f7;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.lefside-text-wrap {
+    flex-flow: column;
+}
+
+.down-arrow-link {
+    animation-name: bounce;
+    animation-delay: 3s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+.down-arrow-link:hover {
+    animation-name: bounce;
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    5% {
+        transform: translateY(15%);
+    }
+
+    10% {
+        transform: translateY(0);
+    }
+
+    15% {
+        transform: translateY(15%);
+    }
+
+    20% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(15%);
+    }
+
+    30% {
+        transform: translateY(0);
+    }
+
+    35% {
+        transform: translateY(15%);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    5% {
+        transform: translateY(-15%);
+    }
+
+    10% {
+        transform: translateY(0);
+    }
+
+    15% {
+        transform: translateY(-15%);
+    }
+
+    20% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-15%);
+    }
+
+    30% {
+        transform: translateY(0);
+    }
+
+    35% {
+        transform: translateY(-15%);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+}
+
+
+.left-screen-socials {
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    flex-flow: column;
+}
+
+.socials {
+    width: 125px;
+    justify-content: space-between;
+}
+
+/* TOP RIGHT CONTENTS */
+
+.top-right-contents {}
+
+.logo {
+    width: 100px;
+}
+
+.rightside-text-wrap {
+    flex-flow: column;
+}
+
+.contact-blurb {
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.message-form {
+    flex-flow: column;
+    justify-content: space-evenly;
+    height: 55vh;
+    width: 55%;
+}
+
+.form-fields {
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 2px solid #333;
+}
+
+.form-fields:active {
+    background-color: transparent;
+
+}
+
+.form-fields:focus {
+    background-color: transparent;
+}
+
+.leave-message {
+    font-weight: 300;
+}
+
+.message-box {
+    resize: none;
+    width: 100%;
+    height: 150px;
+}
+
+#submit-form-btn {
+    width: 100%;
+    height: 45px;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    background-color: #f9f871;
+    color: #59cf94;
+    transition: 0.3s;
+}
+
+#submit-form-btn:hover {
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+        0 12.5px 10px rgba(0, 0, 0, 0.042),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+        0 100px 80px rgba(0, 0, 0, 0.02);
+}
 
 @media only screen and (min-width : 320px) {
 
@@ -609,7 +849,7 @@ HOME PAGE
     .jumbotron-description {
         width: 100%;
     }
-    
+
     .footer-socials-wrap {
         width: 100%;
 
