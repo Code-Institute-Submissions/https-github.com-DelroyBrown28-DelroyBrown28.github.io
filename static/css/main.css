@@ -122,7 +122,8 @@ HOME PAGE
 
 
 .shop-btn:hover,
-.signup-btn:hover {
+.signup-btn:hover,
+.store-footer-signup-btn:hover {
 
     box-shadow:
         0 2.8px 2.2px rgba(0, 0, 0, 0.07),
@@ -519,6 +520,281 @@ SIGN UP/CONTACT PAGE
 
 
 
+/* 
+==========
+STORE PAGE
+==========
+*/
+
+.top-store-banner-wrap {
+    width: 100%;
+    height: 90vh;
+    flex-flow: column;
+    margin-top: 30px;
+
+}
+
+.top-banner {
+    flex-flow: column;
+}
+
+.store-logo {
+    width: 75px;
+}
+
+.store-title {
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+    font-weight: 600;
+    font-size: 5rem;
+    color: #8d8d8d;
+    line-height: 65px;
+}
+
+.title-wrap {
+    height: 100%;
+    flex-flow: column;
+}
+
+.store-signup-btn {
+    width: 120px;
+    height: 40px;
+    border: none;
+    color: #f7f7f7;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #59cf94;
+    transition: 0.3s;
+    margin-top: 30px;
+
+}
+
+.store-signup-btn:hover {
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+        0 12.5px 10px rgba(0, 0, 0, 0.042),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+        0 100px 80px rgba(0, 0, 0, 0.02);
+}
+
+.store-socials-wrap {
+    height: fit-content;
+    padding: 13px 0px;
+    background-color: #B2F093;
+    justify-content: space-evenly;
+}
+
+.store_social_icons {
+    font-size: 1.3rem;
+
+}
+
+.store-images-wrap {
+    height: fit-content;
+    flex-flow: column;
+    margin-top: 50px;
+}
+
+.store-blurb {
+    width: 45%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.link-tag {
+    font-weight: 600;
+    color: #000;
+}
+
+.store-plants {
+    margin-top: 50px;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.plant-card {
+    margin: 0px 15px;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.buy-btn {
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: #f9f871;
+    color: #000;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+        0 12.5px 10px rgba(0, 0, 0, 0.042),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+        0 100px 80px rgba(0, 0, 0, 0.02);
+
+}
+
+.card-img-top {
+    border-radius: 0px !important;
+}
+
+.plant-card {
+    margin-top: 50px;
+}
+
+.footer-blurb {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.footer-blurb-2 {
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.store-footer-contents {
+    position: relative;
+    min-height: 300px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column;
+    background-color: #B2F093;
+
+}
+
+.store-footer-signup-btn {
+    width: 25%;
+    height: 45px;
+    background-color: #f9f871;
+    border: none;
+    color: #000;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.monster-lady-image {
+    position: absolute;
+    top: -77px;
+    left: 50px;
+    width: 150px;
+}
+
+/* 
+===============
+PLANT CARE PAGE
+===============
+*/
+
+.header-contents {
+    background-color: #A1ED85;
+
+    border: 1px solid red;
+}
+
+.plant-care-title {
+    font-size: 4.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 50px 0px;
+
+}
+
+.sub-banner {
+    background-color: #b6e9a3;
+    width: 100vw;
+
+}
+
+.sub-blurb {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+}
+
+.plant-1-wrap {
+    position: relative;
+    flex-wrap: wrap;
+    /* flex-flow: row; */
+}
+
+.plant-1 {
+    width: 400px;
+    height: 400px;
+}
+
+.plant-care-text,
+.care-card-wrap,
+.plant-care-image {
+    width: 33.33%;
+    flex-flow: column;
+}
+
+.plantcare-title1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.plantcare-para1 {
+    font-size: 1.2rem;
+}
+
+.care-card {
+    flex-flow: column;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F9F871;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+        0 12.5px 10px rgba(0, 0, 0, 0.042),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+        0 100px 80px rgba(0, 0, 0, 0.02);
+}
+
+.known-to-attract-wrap {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.care-card1-text {
+    text-align: center;
+    width: 100%;
+}
+
+.insect-icon {
+    flex-flow: column;
+
+}
+
+
+
+
+
+
+
 
 @media only screen and (min-width : 320px) {
 
@@ -730,11 +1006,7 @@ SIGN UP/CONTACT PAGE
 
     }
 
-    .store_social_icons {
-        font-size: 25px;
-        color: #fff;
-        margin: auto;
-    }
+
 
     .store_blurb_wrap {
         width: 100%;
@@ -1041,6 +1313,22 @@ SIGN UP/CONTACT PAGE
         color: #fff;
         font-weight: 600;
 
+    }
+
+    /* STORE PAGE */
+
+    .store-blurb {
+        width: 90%;
+    }
+
+    .footer-blurb {
+        font-size: 1.2rem;
+        margin-top: 50px;
+    }
+
+    .footer-blurb-2 {
+        font-size: 0.9rem;
+        text-align: center;
     }
 }
 
