@@ -1,16 +1,9 @@
-/* 
-MY LITTLE HELPERS
-*/
-
 .flexed {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.redborder {
-    border: 1px solid red;
-}
 
 body,
 html {
@@ -733,7 +726,7 @@ PLANT CARE PAGE
 .plant-1-wrap {
     position: relative;
     flex-wrap: wrap;
-    /* flex-flow: row; */
+    flex-flow: row;
 }
 
 .plant-1 {
@@ -744,7 +737,7 @@ PLANT CARE PAGE
 .plant-care-text,
 .care-card-wrap,
 .plant-care-image {
-    width: 33.33%;
+    width: 33.33% !important;
     flex-flow: column;
 }
 
@@ -754,9 +747,7 @@ PLANT CARE PAGE
     margin-bottom: 20px;
 }
 
-.plantcare-para1 {
-    font-size: 1.2rem;
-}
+
 
 .care-card {
     flex-flow: column;
@@ -779,6 +770,12 @@ PLANT CARE PAGE
     justify-content: space-around;
 }
 
+.iamknownto-1 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 15px 0px;
+}
+
 .care-card1-text {
     text-align: center;
     width: 100%;
@@ -789,11 +786,14 @@ PLANT CARE PAGE
 
 }
 
+input.email_input {
+    width: 30%;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #F9F871;
 
-
-
-
-
+}
 
 
 @media only screen and (min-width : 320px) {
@@ -804,9 +804,7 @@ PLANT CARE PAGE
         height: 50px;
     }
 
-    .wave {
-        height: 100%;
-    }
+  
 
     .center_contents {
         display: flex;
@@ -1127,114 +1125,47 @@ PLANT CARE PAGE
         font-size: 18px;
         background-color: #f9f871;
     }
-}
 
+    /* PLANT CARE PAGE */
 
-/*--Desktop view--*/
-@media only screen and (min-width : 1920px) {
-
-    /*------MAIN PAGE------*/
-
-    .center_logo {
-        max-height: 220px;
+    .plant-1-wrap {
+        margin: 0px 30px;
     }
 
-    .btn_wrap {
-        width: 25%;
+    .plant-care-title {
+        text-align: center;
     }
 
-    .center_btns {
-        height: 49px;
-        width: 130px;
-        font-size: 18px;
-        cursor: pointer;
-
+    .plant-care-text {
+        width: 100vw;
     }
 
-    .sub_blurb {
-        font-size: 25px;
-        max-width: 36%;
-    }
-
-    .center_blurb {
-        font-size: 30px;
-        max-width: 36%;
-    }
-
-    .footer_contents {
-        height: 50px;
-    }
-
-    .socials_wrap {
-        justify-content: space-evenly;
-        margin-left: 20px;
-        min-width: 25%;
-        padding: 0px 10px;
-
-    }
-
-    .social_icons {
-        font-size: 23px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-
-    .plant_care_btn {
-        width: 110px;
-        height: 30px;
-        font-size: 13.35px;
-        border-radius: 100px;
-        border: 2px solid #f9f871;
-        cursor: pointer;
-    }
-
-    /*------STORE PAGE------*/
-
-    .store_body {
-        flex-flow: column;
-    }
-
-    .top_contents {
-        height: 92vh;
-    }
-
-    .title_btn_wrap {
+    .care-footer-contents {
+        position: relative;
+        min-height: 300px;
         margin-top: 100px;
-    }
-
-    .plant_row_wrap {
-        flex-flow: row;
+        padding: 15px;
+        display: flex;
+        align-items: center;
         justify-content: space-evenly;
-        margin-top: 50px;
-    }
-
-    .store_images_wrap {
         flex-flow: column;
+        background-color: #B2F093;
+        text-align: center;
     }
 
+    input.email_input {
+        width: 50%;
+        height: 45px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #F9F871;
+    
+    }
+    
+
 
 }
 
-
-.center_btns:active {
-    box-shadow: none;
-}
-
-.fa-facebook-square:hover {
-    color: #3b5998
-}
-
-.fa-instagram:hover {
-    display: block;
-    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
-}
-
-.fa-twitter-square:hover {
-    color: #1da1f2
-}
 
 @media(max-width: 1311px) {
     .top-left-contents {
@@ -1330,7 +1261,26 @@ PLANT CARE PAGE
         font-size: 0.9rem;
         text-align: center;
     }
+
+    /* PLANT CARE PAGE */
+
+    .plant-1-wrap {
+        flex-flow: column;
+        margin: 0px 30px;
+
+    }
+
+    .plantcare-title1 {
+        margin: 30px 0px;
+        text-align: center;
+    }
+
+    .plantcare-para1 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+
 }
 
 
-@media(max-width: 377px) {}
